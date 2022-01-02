@@ -20,7 +20,7 @@ with st.beta_container():
 
 #%%
 #Navigation bar
-with st.beta_container():
+with st.container():
  #navbar 
 #https://bootsnipp.com/snippets/nNX3a     https://www.mockplus.com/blog/post/bootstrap-navbar-template
    components.html(
@@ -100,16 +100,16 @@ def format_output(ouput):
     
         
 
-with st.beta_container():
+with st.container():
      
-     col10, col11, col12 = st.beta_columns([2,4,3])   
+     col10, col11, col12 = st.columns([2,4,3])   
      with col11:
          sentiments= st.text_input("Paragraph","Type  here...")
 
 
-with st.beta_container():
+with st.container():
      
-     col10, col11, col12 = st.beta_columns([4,5,1])   
+     col10, col11, col12 = st.columns([4,5,1])   
      with col11:
          Submitted=st.button("Get Summary")
 
@@ -138,7 +138,7 @@ if (Submitted):
 
 #footer
 
-with st.beta_container():
+with st.container():
     components.html(
      """
      <div style="position: fixed;
