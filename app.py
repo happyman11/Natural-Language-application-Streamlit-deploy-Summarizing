@@ -85,7 +85,7 @@ with st.beta_container():
 
 
 ###
-summarizer = pipeline("summarization")
+summarizer = pipeline("summarization", model="t5-base", tokenizer="t5-base", framework="tf")
 def summary(comments):
 
     output=summarizer([comments])
